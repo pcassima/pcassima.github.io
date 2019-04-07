@@ -59,8 +59,9 @@ img {
 }
 
 .general_link {
-    margin-left: 24px;
+    /* margin-left: 24px; */
     color: #e11c84;
+    font-weight: bold;
 }
 
 #main_menu {
@@ -94,4 +95,27 @@ img {
     color: #FFF;
     text-decoration: none;
     float: left;
+}
+#main_menu .menu_active:hover{
+    background-color: #700e41;
+}
+
+#main_menu .dropdown_content {
+    display: none;
+    position: absolute;
+    top: 48px;
+    background-color: #1c5555;
+}
+
+#main_menu .dropdown_content a:hover {
+    background-color: #700e41;
+}
+
+#main_menu .dropdown:hover .dropdown_content {
+    display: block;
+}
+
+#main_menu .dropdown {
+    float: left;
+    overflow: hidden;
 }
