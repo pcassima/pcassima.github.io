@@ -7,12 +7,14 @@ h1 {
     color: #20dce1;
     font-size: 48px;
     margin-left: 24px;
+    border-bottom: 4px solid;
 }
 
 h2 {
     color: #18a4af;
     font-size: 32px;
     margin-left: 24px;
+    text-decoration: underline;
 }
 
 h3 {
@@ -44,7 +46,24 @@ p {
     margin-left: 24px;
 }
 
-.main_menu_ul {
+em {
+    color: #16a5a9;
+}
+
+b {
+    color: #e11c84;
+}
+
+img {
+    margin-right: 24px;
+}
+
+.general_link {
+    margin-left: 24px;
+    color: #e11c84;
+}
+
+#main_menu {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -52,29 +71,27 @@ p {
     background-color: #18a4af;
 }
 
-.main_menu_li {
-    float: left;
-}
-
-.main_menu_a {
+#main_menu .menu_link {
     display: block;
     text-align: center;
-    padding: 14px 24px;
+    padding: 14px 16px;
     font-size: 18px;
     color: #FFF;
     text-decoration: none;
+    float: left;
 }
 
-.main_menu_a:hover {
+#main_menu .menu_link:hover {
     background-color: #700e41;
 }
 
-.main_menu_active {
+#main_menu .menu_active {
     display: block;
     text-align: center;
-    padding: 14px 24px;
+    padding: 14px 16px;
     background-color: #a42064;
     font-size: 18px;
     color: #FFF;
     text-decoration: none;
+    float: left;
 }
