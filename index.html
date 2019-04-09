@@ -2,34 +2,66 @@
 <html>
 
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My personal page.</title>
     <link rel="icon" type="image/png" href="img/computer.png">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/main_style.css">
+    <link rel="stylesheet" type="text/css" href="css/prettify.css">
+    <script type="text/javascript" src="javascript/google-code-prettify/prettify.js"></script>
+    <script src="javascript/p5/p5.min.js"></script>
+    <script src="javascript/p5/addons/p5.dom.min.js"></script>
 </head>
 
-<body>
-   <div id="main_menu">
+<body onload="PR.prettyPrint()">
+    <header>
+    </header>
+    <nav>
         <a class="menu_active" href="index.html">Home</a>
         <div class="dropdown">
-            <a class="menu_link" href="projects.html">Projects</a>
+            <a href="projects.html">Projects</a>
             <div class="dropdown_content">
-                <a class="menu_link" href="html/thesis.html">thesis</a>
-                <a class="menu_link" href="html/linal.html">linal</a>
+                <a href="html/thesis.html">thesis</a>
+                <a href="html/linal.html">linal</a>
             </div>
         </div>
-        <a class="menu_link" href="about.html">About</a>
-        <a class="menu_link" href="contact.html">Contact</a>
-    </div>
-
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
     <h1>Welcome to my website</h1>
     <p>
-        This website was mainly created to learn HTML, CSS and Javascript.
+        This website was mainly created to learn HTML, CSS and Javascript. <br>
+        Here is some text to test some tags:
     </p>
+    <p>
+        <ul>
+            <li><b>Some bold text.</b></li>
+            <li><strong>Some strong text.</strong></li>
+            <li><i>Some italic texts.</i></li>
+            <li><em>Some emphasized text.</em></li>
+            <li><mark>Some marked text.</mark></li>
+            <li><small>Some small text.</small></li>
+            <li><del>Some deleted text.</del></li>
+            <li><ins>Some inserted text.</ins></li>
+            <li><sub>Some subscript.</sub></li>
+            <li><sup>Some superscript.</sup></li>
+        </ul>
+    </p>
+    <!-- <h2>Some code examples:</h2>
+
+    <pre class="prettyprint">
+        class Vector(object):
+            def __init__(self, x: [int, float] = 0, y: [int, float] = 0):
+                for i in range(x):
+                    for j in range(y):
+                        print("Hello World")
+            def do_something(self, *args, **kwargs):
+                if args:
+                    print(args)
+    </pre> -->
     <footer>
-        <br clear="left">
-        <hr>
-        <p>Hosted with Github pages.</p>
+        <script src="javascript/p5/create_footer/sketch.js"></script>
     </footer>
 </body>
 
