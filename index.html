@@ -14,11 +14,17 @@
     <script src="javascript/p5/addons/p5.dom.min.js"></script>
 </head>
 
-<body onload="PR.prettyPrint()">
+<body>
+
     <header>
+        <!-- Stuff to put in the header; like a banner. -->
     </header>
+
+
     <nav>
-        <a class="menu_active" href="index.html">Home</a>
+        <div class="main_menu">
+            <a class="menu_active" href="index.html">Home</a>
+        </div>
         <div class="dropdown">
             <a href="projects.html">Projects</a>
             <div class="dropdown_content">
@@ -26,15 +32,20 @@
                 <a href="html/linal.html">linal</a>
             </div>
         </div>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
+        <div class="main_menu">
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
     </nav>
+
+
     <h1>Welcome to my website</h1>
     <p>
-        This website was mainly created to learn HTML, CSS and Javascript. <br>
-        Here is some text to test some tags:
+        This website was mainly created to learn HTML, CSS and Javascript.
+        
     </p>
-    <p>
+
+    <!-- <p>
         <ul>
             <li><b>Some bold text.</b></li>
             <li><strong>Some strong text.</strong></li>
@@ -47,22 +58,23 @@
             <li><sub>Some subscript.</sub></li>
             <li><sup>Some superscript.</sup></li>
         </ul>
-    </p>
-    <!-- <h2>Some code examples:</h2>
+    </p> -->
 
-    <pre class="prettyprint">
-        class Vector(object):
-            def __init__(self, x: [int, float] = 0, y: [int, float] = 0):
-                for i in range(x):
-                    for j in range(y):
-                        print("Hello World")
-            def do_something(self, *args, **kwargs):
-                if args:
-                    print(args)
-    </pre> -->
+
     <footer>
-        <script src="javascript/p5/create_footer/sketch.js"></script>
+        <hr clear="both">
+        <p>
+            My test footer
+        </p>
+        <a class="badge"
+            href="https://www.tindie.com/stores/fenixcomputers/?ref=offsite_badges&utm_source=sellers_fenixcomputers&utm_medium=badges&utm_campaign=badge_medium"
+            target="_blank">
+
+            <img src="https://d2ss6ovg47m0r5.cloudfront.net/badges/tindie-mediums.png" alt="I sell on Tindie"
+                width="150" height="78">
+        </a>
     </footer>
+
 </body>
 
 </html>

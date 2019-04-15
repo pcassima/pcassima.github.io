@@ -65,14 +65,17 @@ em {
 b {
     color: var(--pink1);
 }
+
 mark {
     background-color: var(--teal1);
 }
-strong{
+
+strong {
     color: var(--teal4);
     font-style: italic;
     font-weight: bold;
 }
+
 img {
     margin-right: 24px;
 }
@@ -108,6 +111,11 @@ nav a {
 
 nav a:hover, nav .menu_active:hover {
     background-color: var(--pink3);
+}
+
+nav .main_menu {
+    /* TODO: do something here to make the menu bar stretch across the screen. */
+    background-color: var(--teal2);
 }
 
 nav .menu_active {
@@ -149,4 +157,12 @@ nav .dropdown {
     float: left;
     overflow: hidden;
     background-color: var(--teal2);
+}
+
+footer .badge {
+    float: right;
+}
+
+footer p {
+    float: left;
 }
