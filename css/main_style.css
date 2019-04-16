@@ -155,14 +155,14 @@ nav .dropdown {
     width: 80%;
 }
 
-label {
+.contact_form label {
     margin: 4px;
     padding: 4px 8px;
     background-color: var(--teal2);
     color: #FFF;
 }
 
-input[type=text], textarea {
+.contact_form input[type=text], textarea {
     width: 100%;
     padding: 12px;
     box-sizing: border-box;
@@ -172,7 +172,7 @@ input[type=text], textarea {
     resize: vertical;
 }
 
-input[type=submit] {
+.contact_form input[type=submit] {
     background-color: var(--teal2);
     border: none;
     color: #FFF;
