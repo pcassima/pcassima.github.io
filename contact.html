@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>My personal page.</title>
+    <title>Get in touch</title>
     <link rel="icon" type="image/png" href="img/computer.png">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/main_style.css">
@@ -33,15 +33,16 @@
     <div class="contact_form">
         <form action="https://formspree.io/pieterjancassiman@gmail.com" method="POST">
             <label>Name</label>
-            <input type="text" id="name" name="_name" placeholder="Your name">
+            <input type="text" name="_name" placeholder="Your name">
             <label>email</label>
-            <input type="text" id="email" name="_replyto" placeholder="Your email">
+            <input type="text" name="_replyto" placeholder="Your email">
             <label>subject</label>
-            <input type="text" id="subject" name="_subject" placeholder="Your email">
+            <input type="text" name="_subject" placeholder="Your email">
             <label>Message</label>
-            <textarea type="text" id="message" name="_message" placeholder="Your message"
+            <textarea type="text" name="_message" placeholder="Your message"
                 style="height:200px"></textarea>
             <input type="submit" value="send">
+            <input type="hidden" name="_next" value="contact.html">
         </form>
     </div>
     <footer>
