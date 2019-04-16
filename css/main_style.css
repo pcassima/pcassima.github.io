@@ -16,8 +16,6 @@ body {
     margin-left: 24px;
 }
 
-/* Main styles */
-
 h1 {
     color: var(--teal1);
     font-size: 48px;
@@ -52,6 +50,7 @@ h6 {
 
 p {
     font-size: 16px;
+    margin-right: 8px;
 }
 
 em {
@@ -151,14 +150,74 @@ nav .dropdown {
     background-color: var(--teal2);
 }
 
+.page_body .sidebar {
+    float: left;
+    width: 14%;
+    min-width: 128px;
+    margin-left: -24px;
+    margin-right: 24px;
+    margin-top: 24px;
+    display: block;
+    overflow: hidden;
+}
+
+.page_body .sidebar ol {
+    margin-left: -16px;
+    list-style-type: decimal;
+}
+
+.page_body .sidebar ol li {
+    padding: 1px;
+}
+
+.page_body .sidebar ol ol {
+    margin-left: -1.5em;
+    font-size: 0.85em;
+    list-style-type: lower-latin;
+}
+
+.page_body .sidebar p {
+    text-align: left;
+    margin-left: 8px;
+}
+
+.page_body .main_page {
+    float: left;
+    width: 82%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.page_body .main_page .bottom_navbar {
+    width: 45%;
+    float: left;
+    margin: 1%;
+    font-size: 18px;
+}
+
+.page_body .main_page .bottom_navbar .back {
+    float: left;
+    margin-left: 12%;
+}
+
+.page_body .main_page .bottom_navbar .next {
+    float: right;
+    margin-right: 12%;
+}
+
 .contact_form {
-    width: 80%;
+    width: 800px;
+    border: 2px solid var(--pink2);
+}
+
+.contact_form form {
+    margin: 16px;
 }
 
 .contact_form label {
     margin: 4px;
     padding: 4px 8px;
-    background-color: var(--teal2);
+    background-color: var(--pink1);
     color: #FFF;
 }
 
@@ -170,10 +229,12 @@ nav .dropdown {
     margin-top: 8px;
     margin-bottom: 16px;
     resize: vertical;
+    background-color: #d4eeee;
 }
 
 .contact_form input[type=submit] {
-    background-color: var(--teal2);
+    background-color: var(--pink1);
+    text-align: right;
     border: none;
     color: #FFF;
     cursor: pointer;
