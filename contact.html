@@ -8,8 +8,8 @@
     <link rel="stylesheet" type="text/css" href="css/main_style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <script src="javascript/p5/p5.min.js"></script>
-    <script src="javascript/p5/addons/p5.dom.min.js"></script>
+    <!-- <script src="js/p5/p5.min.js"></script>
+    <script src="js/p5/addons/p5.dom.min.js"></script> -->
 </head>
 
 <body>
@@ -30,7 +30,20 @@
     <p>
         Some text goes here.
     </p>
-
+    <div class="contact_form">
+        <form action="https://formspree.io/pieterjancassiman@gmail.com" method="POST">
+            <label>Name</label>
+            <input type="text" id="name" name="_name" placeholder="Your name">
+            <label>email</label>
+            <input type="text" id="email" name="_replyto" placeholder="Your email">
+            <label>subject</label>
+            <input type="text" id="subject" name="_subject" placeholder="Your email">
+            <label>Message</label>
+            <textarea type="text" id="message" name="_message" placeholder="Your message"
+                style="height:200px"></textarea>
+            <input type="submit" value="send">
+        </form>
+    </div>
     <footer>
         <hr>
 
