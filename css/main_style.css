@@ -180,6 +180,7 @@ footer .badge {
     float: right;
     display: block;
     clear: both;
+    margin-right: 16px;
 }
 
 footer .social_bar {
@@ -191,18 +192,16 @@ footer .social_bar {
     clear: both;
 }
 
-.fa {
-    padding: 12px;
-    width: 16px;
-    margin: 2px;
-    font-size: 3em;
+.fab {
+    padding: 4px;
     text-align: center;
     text-decoration: none;
     display: block;
     float: left;
     color: var(--pink1);
+    font-weight: lighter;
 }
 
-.fa:hover {
+.fab:hover {
     opacity: 0.7;
 }
