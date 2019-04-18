@@ -1,0 +1,28 @@
+doctype html
+html
+    head
+        include includes/head.pug
+    body
+        header
+            include includes/header.pug
+        nav
+            a(href="index.html") Home
+            div.dropdown
+                a(href="projects.html") Projects
+                div.dropdown_content
+                    a(href="thesis.html") Thesis
+                    a(href="linal.html") LINAL
+                    a(href="https://pcassima.github.io/DLC/") DLC
+            a(class="menu_active" href="about.html") About
+            a(href="contact.html") Contact
+        div.page_body
+            h1 Who am I?
+            img(src="img/profile.jpg" alt="profile picture" width="400" height="400" ALIGN="left")
+            p
+                | Currently I am a student in my last year of industrial automation, working on my
+                a(class="general_link" href="html/thesis.html")  thesis.
+            p
+                | I have a big passion for (vintage) computers and electronics. I like to work with logic gates and digital
+                | circuits in my free time. I plan on making computer using discrete logic gates, so keep an eye out for that.
+        footer
+            include includes/footer.pug

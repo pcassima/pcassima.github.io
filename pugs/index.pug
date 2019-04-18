@@ -1,0 +1,23 @@
+doctype html
+html
+    head
+        include includes/head.pug
+    body
+        header
+            include includes/header.pug
+        nav
+            a(class="menu_active" href="index.html") Home
+            div.dropdown
+                a(href="projects.html") Projects
+                div.dropdown_content
+                    a(href="thesis.html") Thesis
+                    a(href="linal.html") LINAL
+                    a(href="https://pcassima.github.io/DLC/") DLC
+            a(href="about.html") About
+            a(href="contact.html") Contact
+        div.page_body
+            h1 Welcome to my website
+            p.
+                This website was mainly created to learn HTML, CSS and Javascript.
+        footer
+            include includes/footer.pug

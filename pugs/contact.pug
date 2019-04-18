@@ -1,0 +1,39 @@
+doctype html
+html
+    head
+        include includes/head.pug
+    body
+        header
+            include includes/header.pug
+        nav
+            a(href="index.html") Home
+            div.dropdown
+                a(href="projects.html") Projects
+                div.dropdown_content
+                    a(href="thesis.html") Thesis
+                    a(href="linal.html") LINAL
+                    a(href="https://pcassima.github.io/DLC/") DLC
+            a(href="about.html") About
+            a(class="menu_active" href="contact.html") Contact
+        div.page_body
+            h1 Get in touch
+            p
+                | Sending me an email is the fastest way to get in touch. You will also get a reply the fastest, this way.
+                br
+                | To get in touch with me in this way, you can just fill out the form below.
+            p
+                | If you prefer you can contact me via any of the other channels found in the social bar in the footer of the page.
+            div.contact_form
+                form(action="https://formspree.io/pieterjancassiman@gmail.com" method="POST")
+                    label Name
+                    input(type="text" name="_name" placeholder="Your name")
+                    label Email
+                    input(type="text" name="_replyto" placeholder="Your email")
+                    label Subject
+                    input(type="text" name="_subject" placeholder="Your email")
+                    label Message
+                    textarea(type="text" name="_message" placeholder="Your message")
+                    input(type="submit" value="send")
+                    input(type="hidden" name="_next" value="https://pcassima.github.io/contact.html")
+        footer
+            include includes/footer.pug
