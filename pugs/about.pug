@@ -1,5 +1,5 @@
 doctype html
-html
+html(lang="en")
     head
         include includes/head.pug
     body
@@ -7,22 +7,34 @@ html
             include includes/header.pug
         nav
             a(href="index.html") Home
-            div.dropdown
-                a(href="projects.html") Projects
-                div.dropdown_content
-                    a(href="thesis.html") Thesis
-                    a(href="linal.html") LINAL
-                    a(href="https://pcassima.github.io/DLC/") DLC
-            a(class="menu_active" href="about.html") About
+            a(href="projects.html") Projects
+            a(class="nav_active" href="about.html") About
             a(href="contact.html") Contact
-        div.page_body
-            h1 Who am I?
-            img(src="img/profile.jpg" alt="profile picture" width="400" height="400" ALIGN="left")
-            p
-                | Currently I am a student in my last year of industrial automation, working on my
-                a(class="general_link" href="html/thesis.html")  thesis.
-            p
-                | I have a big passion for (vintage) computers and electronics. I like to work with logic gates and digital
-                | circuits in my free time. I plan on making computer using discrete logic gates, so keep an eye out for that.
+        aside
+        main
+            article
+                section
+                    h1 Who am I?
+                    img(src="assets/img/profile_photo.jpg" alt="profile picture" width="400" height="400")
+                    p
+                        | Currently I am a graduate student in industrial automation at,
+                        a(href="https://www.hogent.be/en/" target="_blank")  HoGent,
+                        |  working on my Bachelor's thesis. My thesis is focused around improving the practicals and
+                        | linking the different subject, throughout the education, with each other. You can read more
+                        | about my
+                        a(href="projects.html")  thesis
+                        |  here.
+                    p
+                        | I am a big fan and supporter of (open) education. As such all the personal projects I do and
+                        | make, whether they will be a success or not, will be open-source and well documented.
+                        | As long as we all keep an open mind and share what we know, we can all learn something from
+                        | each other. You are never to old to learn!
+                        br
+                        | In fact one of my goals and aspirations if life is to become a professor, so that I can teach
+                        | others even more.
+                    p
+                        | I have a big passion for (vintage) computers and electronics. I like to work with logic gates
+                        | and digital circuits in my free time. I plan on making computer using discrete logic gates,
+                        | so keep an eye out for that.
         footer
             include includes/footer.pug

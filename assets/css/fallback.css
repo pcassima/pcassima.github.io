@@ -80,6 +80,7 @@ strong {
 img {
     margin-left: 16px;
     margin-right: 16px;
+    float: left;
 }
 
 .video_container {

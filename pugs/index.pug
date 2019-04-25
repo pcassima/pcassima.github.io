@@ -1,5 +1,5 @@
 doctype html
-html
+html(lang="en")
 
     head
         include includes/head.pug
@@ -9,20 +9,39 @@ html
             include includes/header.pug
 
         nav
-            a(class="menu_active" href="index.html") Home
-            div.dropdown
-                a(href="projects.html") Projects
-                div.dropdown_content
-                    a(href="thesis.html") Thesis
-                    a(href="linal.html") LINAL
-                    a(href="https://pcassima.github.io/DLC/") DLC
+            a(class="nav_active" href="index.html") Home
+            a(href="projects.html") Projects
             a(href="about.html") About
             a(href="contact.html") Contact
-
-        div.page_body
-            h1 Welcome to my website
-            p.
-                This website was mainly created to learn HTML, CSS and Javascript.
+        aside
+        main
+            article
+                h1 Welcome
+                section
+                    h2 Why did I make this website?
+                    p
+                        | The main motivation behind creating this website, was to learn web development. I use this
+                        | website to learn HTML, CSS, javascript and more.
+                        br
+                        | However while working on this website and thinking about the content to place here, I quickly
+                        | realized that it would be a good idea, opportunity and motivation to use this website as a
+                        | place to house the documentation for all my personal projects.
+                        | This will thus be the main purpose of this website, to provide the documentation for my
+                        | personal projects, along with the files hosted on GitHub. A short description of my projects,
+                        | along with a link to the relevant page, can be found on the
+                        a(href="projects.html")  projects
+                        |  page.
+                    p
+                        | The website for each project will be housed in the <var>docs</var> folder in the
+                        | project repository on GitHub. However I hope to keep the design the same across these
+                        | different websites and repositories, in order to keep the transition from one site to another
+                        | as smooth as possible. Perhaps even hiding the transition.
+                section
+                    h2 Who am I?
+                    p
+                        | If you want to know more about me you can head over to the about section on this website:
+                        a(href="about.html")  about me
+                        | .
 
         footer
             include includes/footer.pug

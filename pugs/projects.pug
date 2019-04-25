@@ -1,0 +1,43 @@
+doctype html
+html
+    head
+        include includes/head.pug
+    body
+        header
+            include includes/header.pug
+        nav
+            a(href="index.html") Home
+            a(class="nav_active" href="projects.html") Projects
+            a(href="about.html") About
+            a(href="contact.html") Contact
+        main
+            article
+                section
+                    h1 Projects
+                    section
+                        h2 Active projects
+                        h3 My Thesis
+                        p
+                            | I am currently writing my thesis for my bachelor's degree in industrial automation.
+                        p
+                            | Currently I do not yet know, if I will be allowed to write publicly about it. As soon as
+                            | I know more I will update this page and add the relevant information about it.
+                        h3 LINAL
+                    section
+                        h2 Planned projects
+                        h3 DLC
+                        p
+                            | I am planning on building a fully operational 8-bit computer, out of nothing but logic
+                            | IC's from the 74-series.
+                            | The entire process will be documented both with written articles and videos on YouTube.
+                            | The written articles will contain more information than the videos. The articles are
+                            | meant as an follow-along to the videos.
+                            | The videos themselves will be formatted as lectures.
+                        p
+                            | More information about the project can be found here:
+                            a(href="https://pcassima.github.io/DLC/" target="_blank")  DLC
+                    section
+                        h2 Past projects
+
+        footer
+            include includes/footer.pug
