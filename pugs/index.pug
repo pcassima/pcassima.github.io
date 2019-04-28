@@ -75,8 +75,9 @@ html(lang="en")
                             | z=x+y;
                             | z=6;
                     h3 A download-button test
-                    button(class="btn" type="submit" onclick="window.open('assets/img/favicon.png')")
-                        a(class="fa fa-download")  Download
+                    button(class="download" type="submit" onclick="window.open('assets/img/favicon.png')")
+                        i(class="fa fa-download")
+                        i(class="download_text") Download
 
         footer
             include includes/footer.pug
