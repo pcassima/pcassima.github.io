@@ -93,11 +93,27 @@ body {
     font-weight: bold;
   }
 
+  samp{
+    //color: #FFF;
+    background-color: #CCC;
+    padding: 2px 4px;
+    margin: 0 4px;
+  }
+
+  pre{
+    margin-left: 48px;
+    font-size: 14px;
+  }
+
 
   img {
-    margin-left: 16px;
+    //margin-left: 16px;
     margin-right: 16px;
+    margin-bottom: 16px;
     float: left;
+    width: 100%;
+    height: auto;
+    max-width: 400px;
   }
 }
 
@@ -267,7 +283,8 @@ main {
 }
 
 .contact_form {
-  width: 800px;
+  max-width: 800px;
+  width: 100%;
   border: 2px solid $pink2;
 
   form {
@@ -299,6 +316,17 @@ main {
     cursor: pointer;
     font-size: 20px;
     padding: 5px 20px;
+  }
+}
+
+.btn{
+  background-color: dodgerblue;
+  border: none;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+  a{
+    color: #FFF
   }
 }
 
