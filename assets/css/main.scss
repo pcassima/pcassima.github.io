@@ -323,16 +323,13 @@ main {
   background-color: $pink1;
   border: none;
   margin: 8px 0;
+  color: #FFF;
   padding: 12px 30px;
   cursor: pointer;
   font-size: 20px;
+  font-weight: bold;
   i{
     color: #FFF;
-  }
-  .download_text{
-    font-style: normal;
-    font-weight: bold;
-    margin-left: 8px;
   }
 }
 

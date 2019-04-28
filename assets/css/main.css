@@ -257,17 +257,14 @@ main .bottom_navbar .next {
   background-color: #e11c84;
   border: none;
   margin: 8px 0;
+  color: #FFF;
   padding: 12px 30px;
   cursor: pointer;
   font-size: 20px;
+  font-weight: bold;
 }
 .download i {
   color: #FFF;
-}
-.download .download_text {
-  font-style: normal;
-  font-weight: bold;
-  margin-left: 8px;
 }
 
 footer {
