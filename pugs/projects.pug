@@ -18,7 +18,14 @@ html
         main
             article
                 h1 Projects
-                section
+                ul
+                    li
+                        a(href="#active_projects") Active Projects
+                    li
+                        a(href="#planned_projects") Planned Projects
+                    li
+                        a(href="#past_projects") Past Projects
+                section(id="active_projects")
                     h2 Active projects
                     h3 My Thesis
                     p
@@ -27,7 +34,7 @@ html
                         | Currently I do not yet know, if I will be allowed to write publicly about it. As soon as
                         | I know more I will update this page and add the relevant information about it.
                     h3 LINAL
-                section
+                section(id="planned_projects")
                     h2 Planned projects
                     h3 DLC
                     p
@@ -40,7 +47,7 @@ html
                     p
                         | More information about the project can be found here:
                         a(href="https://pcassima.github.io/DLC/" target="_blank")  DLC
-                section
+                section(id="past_projects")
                     h2 Past projects
 
         footer
