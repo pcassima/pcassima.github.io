@@ -8,14 +8,20 @@ html(lang="en")
         nav
             a(href="index.html") Home
             a(href="projects.html") Projects
+            a(href="gallery.html") Gallery
             a(class="nav_active" href="about.html") About
             a(href="contact.html") Contact
-        aside
+        aside.left
+            include includes/left_aside.pug
+        aside.right
+            include includes/right_aside.pug
         main
             article
                 section
                     h1 Who am I?
-                    img(src="assets/img/profile_photo.jpg" alt="profile picture" width="400" height="400")
+                    figure
+                        img(src="assets/img/profile_photo.jpg" alt="profile picture" width="400" height="400")
+                        figcaption It's me
                     p
                         | Currently I am a graduate student in industrial automation at,
                         a(href="https://www.hogent.be/en/" target="_blank")  HoGent,

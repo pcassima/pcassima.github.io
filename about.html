@@ -7,16 +7,25 @@
     <link rel="icon" type="image/png" href="assets/img/favicon.png">
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   </head>
   <body>
     <header></header>
-    <nav><a href="index.html">Home</a><a href="projects.html">Projects</a><a class="nav_active" href="about.html">About</a><a href="contact.html">Contact</a></nav>
-    <aside></aside>
+    <nav><a href="index.html">Home</a><a href="projects.html">Projects</a><a href="gallery.html">Gallery</a><a class="nav_active" href="about.html">About</a><a href="contact.html">Contact</a></nav>
+    <aside class="left">
+      <p>left side bar</p>
+    </aside>
+    <aside class="right">
+      <p>right side bar</p>
+    </aside>
     <main>
       <article>
         <section>
-          <h1>Who am I?</h1><img src="assets/img/profile_photo.jpg" alt="profile picture" width="400" height="400">
+          <h1>Who am I?</h1>
+          <figure><img src="assets/img/profile_photo.jpg" alt="profile picture" width="400" height="400">
+            <figcaption>It's me</figcaption>
+          </figure>
           <p>Currently I am a graduate student in industrial automation at,<a href="https://www.hogent.be/en/" target="_blank"> HoGent,</a> working on my Bachelor's thesis. My thesis is focused around improving the practicals and
             linking the different subject, throughout the education, with each other. You can read more
             about my<a href="projects.html"> thesis</a> here.
@@ -39,7 +48,7 @@
     <footer>
       <hr>
       <div class="footer_column">
-        <p>&copy 2019, Pieter-Jan Cassiman</p>
+        <p>&copy; 2019, Pieter-Jan Cassiman</p>
         <ul class="social_bar">
           <li><a class="fab fa-youtube fa-2x" href="https://www.youtube.com/channel/UCag4kR1A4hj4j2MgZwDUQLg" target="_blank"></a></li>
           <li><a class="fab fa-instagram fa-2x" href="https://www.instagram.com/pieterjancassiman/" target="_blank"></a></li>
@@ -50,10 +59,11 @@
         </ul>
       </div>
       <div class="footer_column">
-        <form class="badge" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+        <form class="badge" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
           <input type="hidden" name="cmd" value="_s-xclick">
-          <input type="hidden" name="hosted_button_id" value="ZD9SEDGQSKR3U">
-          <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button"><img alt="" border="0" src="https://www.paypal.com/en_BE/i/scr/pixel.gif" width="1" height="1">
+          <input type="hidden" name="hosted_button_id" value="HUKNCQV28VZV6">
+          <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button">
+          <!--img(alt="" border="0" src="https://www.paypal.com/en_BE/i/scr/pixel.gif" width="1" height="1")-->
         </form><a class="badge" href="https://www.tindie.com/stores/fenixcomputers/?ref=offsite_badges&amp;utm_source=sellers_fenixcomputers&amp;utm_medium=badges&amp;utm_campaign=badge_medium" target="_blank"><img src="https://d2ss6ovg47m0r5.cloudfront.net/badges/tindie-mediums.png" alt="I sell on Tindie" width="150" height="78"></a>
       </div>
     </footer>

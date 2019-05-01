@@ -11,9 +11,13 @@ html(lang="en")
         nav
             a(class="nav_active" href="index.html") Home
             a(href="projects.html") Projects
+            a(href="gallery.html") Gallery
             a(href="about.html") About
             a(href="contact.html") Contact
-        aside
+        aside.left
+            include includes/left_aside.pug
+        aside.right
+            include includes/right_aside.pug
         main
             article
                 h1 Welcome
@@ -67,17 +71,19 @@ html(lang="en")
                             samp sample computer output
                         li
                             kbd Keyboard input
+                    p Sample code section
                     pre
-                        p Sample code section
                         code
                             | x=2;
                             | y=4;
                             | z=x+y;
                             | z=6;
+                    p Sample github code section
+                    .gist_container
+                        script(src="https://gist.github.com/pcassima/05c4a7dfdb3a5a22977c7201aa58ae2e.js")
                     h3 A download-button test
                     button(class="download" type="submit" onclick="window.open('assets/img/favicon.png')")
                         i(class="fa fa-download")
                         i(class="download_text") Download
-
         footer
             include includes/footer.pug

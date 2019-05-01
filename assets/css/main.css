@@ -10,6 +10,11 @@ body h1 {
   margin-top: 24px;
   margin-bottom: 12px;
 }
+@media screen and (max-width: 550px) {
+  body h1 {
+    font-size: 28px;
+  }
+}
 body h2 {
   color: #18a4af;
   font-size: 32px;
@@ -17,15 +22,30 @@ body h2 {
   margin-top: 0;
   margin-bottom: 8px;
 }
+@media screen and (max-width: 550px) {
+  body h2 {
+    font-size: 22px;
+  }
+}
 body h3 {
   color: #1c5555;
   font-size: 24px;
   margin: 0;
 }
+@media screen and (max-width: 550px) {
+  body h3 {
+    font-size: 20px;
+  }
+}
 body h4 {
   color: #a42064;
   font-size: 18px;
   margin: 0;
+}
+@media screen and (max-width: 550px) {
+  body {
+    font-size: 16px;
+  }
 }
 body h5 {
   color: #700e41;
@@ -51,7 +71,6 @@ body em {
   color: #16a5a9;
 }
 body var {
-  color: #18a4af;
   font-style: italic;
 }
 body b {
@@ -70,17 +89,19 @@ body samp {
   padding: 2px 4px;
   margin: 0 4px;
 }
-body pre {
-  margin-left: 48px;
-  font-size: 14px;
-}
-body img {
-  margin-right: 16px;
-  margin-bottom: 16px;
+body figure {
+  padding: 0;
+  margin: 0 16px 16px 0;
   float: left;
+}
+body figure img {
   width: 100%;
   height: auto;
   max-width: 400px;
+}
+body figure figcaption {
+  text-align: right;
+  font-size: 12px;
 }
 
 header h1 {
@@ -95,10 +116,6 @@ nav {
   overflow: hidden;
   display: block;
 }
-nav a {
-  text-decoration: none;
-  font-weight: normal;
-}
 nav .nav_active {
   background-color: #a42064;
 }
@@ -106,20 +123,31 @@ nav a, nav .nav_active {
   display: block;
   text-align: center;
   padding: 8px 16px;
-  font-size: 20px;
   color: #FFF;
   text-decoration: none;
+  font-weight: normal;
   float: left;
   width: 78px;
+  font-size: 20px;
+}
+@media screen and (max-width: 550px) {
+  nav a, nav .nav_active {
+    float: none;
+    width: 100%;
+    font-size: 16px;
+    text-align: left;
+  }
 }
 nav a:hover, nav .nav_active:hover {
   background-color: #700e41;
 }
 
 aside {
-  float: left;
   width: 120px;
   overflow: hidden;
+}
+aside p {
+  margin: 8px 4px;
 }
 aside ol {
   margin-left: -10px;
@@ -127,6 +155,24 @@ aside ol {
 aside ol ol {
   margin-left: -30px;
   list-style-type: lower-latin;
+}
+
+.left {
+  float: left;
+}
+@media screen and (max-width: 670px) {
+  .left {
+    display: none;
+  }
+}
+
+.right {
+  float: right;
+}
+@media screen and (max-width: 790px) {
+  .right {
+    display: none;
+  }
 }
 
 main {
@@ -158,11 +204,31 @@ main .bottom_navbar .next {
   padding: 8px;
 }
 
+pre {
+  background-color: transparent;
+  border: 1px solid #a42064;
+  border-left: 4px solid #e11c84;
+  color: #444;
+  page-break-inside: avoid;
+  font-size: 14px;
+  margin-bottom: 1.6em;
+  overflow: auto;
+  padding: 1em 1.5em;
+  word-wrap: break-word;
+  margin-left: 4%;
+  min-width: 20%;
+  display: inline-block;
+}
+pre code {
+  font-family: "Droid Sans Mono", monospace;
+  font-size: 14px;
+}
+
 .video_container {
   position: relative;
   overflow: hidden;
   padding-top: 56.25%;
-  border: 2px solid var(--pink1);
+  border: 2px solid #e11c84;
 }
 .video_container p {
   position: absolute;
@@ -181,7 +247,7 @@ main .bottom_navbar .next {
 }
 
 .canvas_container {
-  border: 2px solid var(--pink2);
+  border: 2px solid #a42064;
 }
 .canvas_container canvas {
   display: block;
@@ -202,7 +268,7 @@ main .bottom_navbar .next {
   appearance: none;
   width: 100%;
   height: 12px;
-  background: var(--teal1);
+  background: #20dce1;
   outline: none;
 }
 .slider_container input[type=range]::-webkit-slider-thumb {
@@ -210,13 +276,13 @@ main .bottom_navbar .next {
   appearance: none;
   width: 12px;
   height: 24px;
-  background-color: var(--pink1);
+  background-color: #e11c84;
   cursor: pointer;
 }
 .slider_container input[type=range]::-moz-range-thumb {
   width: 12px;
   height: 24px;
-  background-color: var(--pink1);
+  background-color: #e11c84;
   cursor: pointer;
 }
 
@@ -224,6 +290,7 @@ main .bottom_navbar .next {
   max-width: 800px;
   width: 100%;
   border: 2px solid #a42064;
+  margin: 0 auto;
 }
 .contact_form form {
   margin: 16px;
@@ -265,6 +332,87 @@ main .bottom_navbar .next {
 }
 .download i {
   color: #FFF;
+  font-style: normal;
+  margin-left: 8px;
+}
+
+.gist_container {
+  margin: 12px 0;
+}
+.gist_container .gist .gist-file {
+  margin-bottom: 0;
+  border: 1px solid #700e41;
+  border-radius: 0;
+}
+.gist_container .gist .gist-data {
+  border-bottom: none;
+  border-radius: 0;
+  background-color: #FFF;
+}
+.gist_container .gist .blob-wrapper {
+  border-radius: 0;
+}
+.gist_container .gist .highlight {
+  background-color: transparent;
+  font-family: "Droid Sans Mono", monospace;
+  font-size: 14px;
+}
+.gist_container .gist .highlight td {
+  padding: 5px 10px !important;
+  line-height: 1;
+  font-family: inherit;
+  font-size: inherit;
+}
+.gist_container .gist tr:first-child td {
+  padding-top: 15px !important;
+}
+.gist_container .gist tr:last-child td {
+  padding-bottom: 15px !important;
+}
+.gist_container .gist .blob-num {
+  color: #FFF;
+  background-color: #e11c84;
+  pointer-events: none;
+}
+.gist_container .gist .gist-meta {
+  color: #FFF;
+  background-color: #a42064;
+}
+.gist_container .gist .gist-meta a {
+  color: #FFF;
+  font-weight: bold;
+}
+
+.gallery_container {
+  margin: 12px 0;
+  display: grid;
+  grid-gap: 10px;
+  align-items: stretch;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+@media screen and (max-width: 1200px) {
+  .gallery_container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 600px) {
+  .gallery_container {
+    grid-template-columns: 1fr;
+  }
+}
+.gallery_container figure {
+  padding: 0;
+  margin: 0;
+}
+.gallery_container figure img {
+  object-fit: cover;
+  max-width: 100%;
+  margin: 12px 0;
+}
+.gallery_container figure figcaption {
+  text-align: center;
+  font-size: 14px;
 }
 
 footer {

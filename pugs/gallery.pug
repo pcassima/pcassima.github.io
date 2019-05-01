@@ -1,0 +1,54 @@
+doctype html
+html(lang="en")
+    head
+        include includes/head.pug
+    body
+        header
+            include includes/header.pug
+        nav
+            a(href="index.html") Home
+            a(href="projects.html") Projects
+            a(class="nav_active" href="gallery.html") Gallery
+            a(href="about.html") About
+            a(href="contact.html") Contact
+        aside.left
+            include includes/left_aside.pug
+        aside.right
+            include includes/right_aside.pug
+        main
+            article
+                h1 Gallery
+                section
+                    h2 Projects
+                    p
+                        | Some royalty free images, used as filler, to test the layout and styling:
+                    .gallery_container
+                        figure
+                            img(src="https://images.pexels.com/photos/1509428/pexels-photo-1509428.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="image 1")
+                            figcaption Figure 1
+                        figure
+                            img(src="https://images.pexels.com/photos/825258/pexels-photo-825258.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="image 2")
+                            figcaption
+                                a(href="#") Figure 2
+                                br
+                                | &copy; 2019
+                        figure
+                            img(src="https://images.pexels.com/photos/919734/pexels-photo-919734.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="image 3")
+                            figcaption Figure 3
+                        figure
+                            img(src="https://images.pexels.com/photos/775907/pexels-photo-775907.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="image 4")
+                            figcaption Figure 4
+                        figure
+                            img(src="https://images.pexels.com/photos/7974/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=650&w=940" alt="image 5")
+                            figcaption Figure 5
+                        figure
+                            img(src="https://images.pexels.com/photos/1927509/pexels-photo-1927509.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="image 6")
+                            figcaption Figure 6
+                        figure
+                            img(src="https://images.pexels.com/photos/169573/pexels-photo-169573.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="image 7")
+                            figcaption Figure 7
+                        figure
+                            img(src="https://images.pexels.com/photos/327509/pexels-photo-327509.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="image 8")
+                            figcaption Figure 8
+                section
+                    h2 Other photos
