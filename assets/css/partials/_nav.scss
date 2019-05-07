@@ -39,8 +39,9 @@ nav {
   }
 
 
-  @media screen and (max-width: 750px) {
+  @media screen and (max-width: $mobile_switch) {
     //Mobile layout (both phone and tablet)
+    border-top: 4px solid $teal1;
 
     a, .nav_active {
       float: none;

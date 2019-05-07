@@ -7,7 +7,7 @@ $pink2: #a42064;
 $pink3: #700e41;
 
 $aside_width: 120px;
-$mobile_switch: 550px;
+$mobile_switch: 750px;
 
 @import 'partials/nav';
 @import 'partials/gist';
@@ -28,6 +28,7 @@ body {
     margin-bottom: 12px;
     @media screen and (max-width: $mobile_switch) {
       font-size: 28px;
+      font-weight: normal;
     }
   }
 
@@ -39,6 +40,7 @@ body {
     margin-bottom: 8px;
     @media screen and (max-width: $mobile_switch) {
       font-size: 22px;
+      font-weight: normal;
     }
   }
 
