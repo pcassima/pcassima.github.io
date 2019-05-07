@@ -6,11 +6,24 @@ html
         header
             include includes/header.pug
         nav
-            a(href="index.html") Home
-            a(class="nav_active" href="projects.html") Projects
-            a(href="gallery.html") Gallery
-            a(href="about.html") About
-            a(href="contact.html") Contact
+            .hamburger(onclick="myFunction()")
+                .hamburger-bar
+                .hamburger-bar
+                .hamburger-bar
+
+            ul#nav-list.nav-list
+                li
+                    a(href="index.html") Home
+                li
+                    a(class="nav_active" href="projects.html") Projects
+                li
+                    a(href="#") Experiments
+                li
+                    a(href="gallery.html") Gallery
+                li
+                    a(href="about.html") About
+                li
+                    a(href="contact.html") Contact
         aside.left
             include includes/left_aside.pug
         aside.right
@@ -47,6 +60,38 @@ html
                     p
                         | More information about the project can be found here:
                         a(href="https://pcassima.github.io/DLC/" target="_blank")  DLC
+                    h3 Other ideas
+                    p These are some ideas that are waiting to be started.
+                    ul.fa-ul
+                        li
+                            span.fa-li
+                                i(class="fas fa-caret-right")
+                            | A series about computer vision on the Raspberry Pi
+                        li
+                            span.fa-li
+                                i(class="fas fa-caret-right")
+                            | A linefollower with a raspberry pi (IR sensors)
+                        li
+                            span.fa-li
+                                i(class="fas fa-caret-right")
+                            | A linefollower with computer vision
+                        li
+                            span.fa-li
+                                i(class="fas fa-caret-right")
+                            | Arduino RS-232 with flow control
+                        li
+                            span.fa-li
+                                i(class="fas fa-caret-right")
+                            | DIY serial terminal
+                        li
+                            span.fa-li
+                                i(class="fas fa-caret-right")
+                            | Discrete hardware serial implementation
+                        li
+                            span.fa-li
+                                i(class="fas fa-caret-right")
+                            | Handheld game console (RGB-matrix en Pycom/Teensy)
+
                 section(id="past_projects")
                     h2 Past projects
 

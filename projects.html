@@ -3,22 +3,35 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Pieter-Jan Cassiman">
+    <meta name="description" content="My corner of the internet">
     <title>My personal page</title>
     <link rel="icon" type="image/png" href="assets/img/favicon.png">
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="./js/nav.js"></script>
   </head>
   <body>
     <header></header>
-    <nav><a href="index.html">Home</a><a class="nav_active" href="projects.html">Projects</a><a href="gallery.html">Gallery</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav>
-    <aside class="left">
-      <p>left side bar</p>
-    </aside>
-    <aside class="right">
-      <p>right side bar</p>
-    </aside>
+    <nav>
+      <div class="hamburger" onclick="myFunction()">
+        <div class="hamburger-bar"></div>
+        <div class="hamburger-bar"></div>
+        <div class="hamburger-bar"></div>
+      </div>
+      <ul class="nav-list" id="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a class="nav_active" href="projects.html">Projects</a></li>
+        <li><a href="#">Experiments</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <aside class="left"></aside>
+    <aside class="right"></aside>
     <main>
       <article>
         <h1>Projects</h1>
@@ -49,6 +62,17 @@
             The videos themselves will be formatted as lectures.
           </p>
           <p>More information about the project can be found here:<a href="https://pcassima.github.io/DLC/" target="_blank"> DLC</a></p>
+          <h3>Other ideas</h3>
+          <p>These are some ideas that are waiting to be started.</p>
+          <ul class="fa-ul">
+            <li><span class="fa-li"><i class="fas fa-caret-right"></i></span>A series about computer vision on the Raspberry Pi</li>
+            <li><span class="fa-li"><i class="fas fa-caret-right"></i></span>A linefollower with a raspberry pi (IR sensors)</li>
+            <li><span class="fa-li"><i class="fas fa-caret-right"></i></span>A linefollower with computer vision</li>
+            <li><span class="fa-li"><i class="fas fa-caret-right"></i></span>Arduino RS-232 with flow control</li>
+            <li><span class="fa-li"><i class="fas fa-caret-right"></i></span>DIY serial terminal</li>
+            <li><span class="fa-li"><i class="fas fa-caret-right"></i></span>Discrete hardware serial implementation</li>
+            <li><span class="fa-li"><i class="fas fa-caret-right"></i></span>Handheld game console (RGB-matrix en Pycom/Teensy)</li>
+          </ul>
         </section>
         <section id="past_projects">
           <h2>Past projects</h2>
@@ -65,7 +89,8 @@
           <li><a class="fab fa-github fa-2x" href="https://github.com/pcassima" target="_blank"></a></li>
           <li><a class="fab fa-blogger fa-2x" href="https://transistories.blogspot.com/" target="_blank"></a></li>
           <li><a class="fab fa-twitter fa-2x" href="https://twitter.com/PieterJanCassim" target="_blank"></a></li>
-          <li><a class="fab fa-reddit fa-2x" href="https://www.reddit.com/user/pcassima" target="_blank"></a></li>
+          <!--li-->
+          <!--    a(href="https://www.reddit.com/user/pcassima" class="fab fa-reddit fa-2x" target="_blank")-->
         </ul>
       </div>
       <div class="footer_column">

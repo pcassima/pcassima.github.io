@@ -9,11 +9,24 @@ html(lang="en")
             include includes/header.pug
 
         nav
-            a(class="nav_active" href="index.html") Home
-            a(href="projects.html") Projects
-            a(href="gallery.html") Gallery
-            a(href="about.html") About
-            a(href="contact.html") Contact
+            .hamburger(onclick="myFunction()")
+                .hamburger-bar
+                .hamburger-bar
+                .hamburger-bar
+
+            ul#nav-list.nav-list
+                li
+                    a(class="nav_active" href="index.html") Home
+                li
+                    a(href="projects.html") Projects
+                li
+                    a(href="#") Experiments
+                li
+                    a(href="gallery.html") Gallery
+                li
+                    a(href="about.html") About
+                li
+                    a(href="contact.html") Contact
         aside.left
             include includes/left_aside.pug
         aside.right
@@ -47,43 +60,27 @@ html(lang="en")
                         a(href="about.html")  about me
                         | .
                 section
-                    h1 Style experiments
-                    h2 This for composing the stylesheet for the relevant tags
-                    h2 Heading 2
-                    h3 Heading 3
-                    h4 Heading 4
-                    h5 Heading 5
-                    h6 Heading 6
+                    h2 What will you find here?
                     p
-                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet cupiditate fugit illum, minus
-                        | omnis repellat sapiente? Atque culpa fuga hic ipsa, iste labore nam officia optio qui tenetur,
-                        | voluptas voluptatum!
-                    ul
-                        li
-                            em empasized text
-                        li
-                            b bold text
-                        li
-                            var variables
-                        li
-                            mark marked text
-                        li
-                            samp sample computer output
-                        li
-                            kbd Keyboard input
-                    p Sample code section
-                    pre
-                        code
-                            | x=2;
-                            | y=4;
-                            | z=x+y;
-                            | z=6;
-                    p Sample github code section
-                    .gist_container
-                        script(src="https://gist.github.com/pcassima/05c4a7dfdb3a5a22977c7201aa58ae2e.js")
-                    h3 A download-button test
-                    button(class="download" type="submit" onclick="window.open('assets/img/favicon.png')")
-                        i(class="fa fa-download")
-                        i(class="download_text") Download
+                        | This website will house a lot of information; This is divided into several sections.
+                    p
+                        | The first section is all about the different projects that I have done.
+                        | Each project will have its own page documenting the requirements, the build steps and all
+                        | related information.
+                        br
+                        | They are formatted as a step by step guide on how to make the project yourself.
+                    a(href="projects.html") Projects
+                    p
+                        | The second section is called experiments, this is for projects that I don't know much about
+                        | yet or that I am not sure will 100% work out the way they are supposed.
+                        br
+                        | Those will be formatted more as a "learn with me".
+                    a(href="#") Experiments
+                    p
+                        | The last section is all about tutorials.
+                        | These are completely stand-alone pieces that are meant to show how to do a certain thing.
+                        br
+                        | My tutorials I will write over on Instructables.
+                    a(href="https://www.instructables.com/member/Pieter-Jan%20Cassiman/" target="_blank") Tutorials
         footer
             include includes/footer.pug

@@ -3,22 +3,35 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Pieter-Jan Cassiman">
+    <meta name="description" content="My corner of the internet">
     <title>My personal page</title>
     <link rel="icon" type="image/png" href="assets/img/favicon.png">
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="./js/nav.js"></script>
   </head>
   <body>
     <header></header>
-    <nav><a class="nav_active" href="index.html">Home</a><a href="projects.html">Projects</a><a href="gallery.html">Gallery</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav>
-    <aside class="left">
-      <p>left side bar</p>
-    </aside>
-    <aside class="right">
-      <p>right side bar</p>
-    </aside>
+    <nav>
+      <div class="hamburger" onclick="myFunction()">
+        <div class="hamburger-bar"></div>
+        <div class="hamburger-bar"></div>
+        <div class="hamburger-bar"></div>
+      </div>
+      <ul class="nav-list" id="nav-list">
+        <li><a class="nav_active" href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="#">Experiments</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <aside class="left"></aside>
+    <aside class="right"></aside>
     <main>
       <article>
         <h1>Welcome</h1>
@@ -45,41 +58,21 @@
           <p>If you want to know more about me you can head over to the about section on this website:<a href="about.html"> about me</a>.</p>
         </section>
         <section>
-          <h1>Style experiments</h1>
-          <h2>This for composing the stylesheet for the relevant tags</h2>
-          <h2>Heading 2</h2>
-          <h3>Heading 3</h3>
-          <h4>Heading 4</h4>
-          <h5>Heading 5</h5>
-          <h6>Heading 6</h6>
+          <h2>What will you find here?</h2>
+          <p>This website will house a lot of information; This is divided into several sections.</p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet cupiditate fugit illum, minus
-            omnis repellat sapiente? Atque culpa fuga hic ipsa, iste labore nam officia optio qui tenetur,
-            voluptas voluptatum!
-          </p>
-          <ul>
-            <li><em>empasized text</em></li>
-            <li><b>bold text</b></li>
-            <li>
-              <var>variables</var>
-            </li>
-            <li>
-              <mark>marked text</mark>
-            </li>
-            <li><samp>sample computer output</samp></li>
-            <li><kbd>Keyboard input</kbd></li>
-          </ul>
-          <p>Sample code section</p>
-          <pre><code>x=2;
-y=4;
-z=x+y;
-z=6;</code></pre>
-          <p>Sample github code section</p>
-          <div class="gist_container">
-            <script src="https://gist.github.com/pcassima/05c4a7dfdb3a5a22977c7201aa58ae2e.js"></script>
-          </div>
-          <h3>A download-button test</h3>
-          <button class="download" type="submit" onclick="window.open('assets/img/favicon.png')"><i class="fa fa-download"></i><i class="download_text">Download</i></button>
+            The first section is all about the different projects that I have done.
+            Each project will have its own page documenting the requirements, the build steps and all
+            related information.<br>They are formatted as a step by step guide on how to make the project yourself.
+          </p><a href="projects.html">Projects</a>
+          <p>
+            The second section is called experiments, this is for projects that I don't know much about
+            yet or that I am not sure will 100% work out the way they are supposed.<br>Those will be formatted more as a "learn with me".
+          </p><a href="#">Experiments</a>
+          <p>
+            The last section is all about tutorials.
+            These are completely stand-alone pieces that are meant to show how to do a certain thing.<br>My tutorials I will write over on Instructables.
+          </p><a href="https://www.instructables.com/member/Pieter-Jan%20Cassiman/" target="_blank">Tutorials</a>
         </section>
       </article>
     </main>
@@ -93,7 +86,8 @@ z=6;</code></pre>
           <li><a class="fab fa-github fa-2x" href="https://github.com/pcassima" target="_blank"></a></li>
           <li><a class="fab fa-blogger fa-2x" href="https://transistories.blogspot.com/" target="_blank"></a></li>
           <li><a class="fab fa-twitter fa-2x" href="https://twitter.com/PieterJanCassim" target="_blank"></a></li>
-          <li><a class="fab fa-reddit fa-2x" href="https://www.reddit.com/user/pcassima" target="_blank"></a></li>
+          <!--li-->
+          <!--    a(href="https://www.reddit.com/user/pcassima" class="fab fa-reddit fa-2x" target="_blank")-->
         </ul>
       </div>
       <div class="footer_column">
