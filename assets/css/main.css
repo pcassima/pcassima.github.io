@@ -163,7 +163,7 @@ body h1 {
 @media screen and (max-width: 750px) {
   body h1 {
     font-size: 28px;
-    font-weight: normal;
+    font-weight: lighter;
   }
 }
 body h2 {
@@ -176,7 +176,7 @@ body h2 {
 @media screen and (max-width: 750px) {
   body h2 {
     font-size: 22px;
-    font-weight: normal;
+    font-weight: lighter;
   }
 }
 body h3 {
@@ -187,6 +187,7 @@ body h3 {
 @media screen and (max-width: 750px) {
   body h3 {
     font-size: 20px;
+    font-weight: lighter;
   }
 }
 body h4 {
