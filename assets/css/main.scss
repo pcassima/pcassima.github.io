@@ -6,7 +6,7 @@ $pink1: #e11c84;
 $pink2: #a42064;
 $pink3: #700e41;
 
-$aside_width: 120px;
+$aside_width: 140px;
 $mobile_switch: 750px;
 
 @import 'partials/nav';
@@ -58,10 +58,11 @@ body {
     color: $pink2;
     font-size: 18px;
     margin: 0;
-  }
 
-  @media screen and (max-width: $mobile_switch) {
-    font-size: 16px;
+
+    @media screen and (max-width: $mobile_switch) {
+      font-size: 16px;
+    }
   }
 
   h5 {
@@ -148,9 +149,16 @@ header {
 aside {
   width: $aside_width;
   overflow: hidden;
+  margin-top: 24px;
 
   p {
     margin: 8px 4px;
+  }
+
+  a {
+    color: $pink1;
+    font-weight: bold;
+    text-decoration: none;
   }
 
   ol {
@@ -161,7 +169,7 @@ aside {
     }
 
     ol {
-      margin-left: -30px;
+      margin-left: -35px;
       list-style-type: lower-latin;
     }
 
