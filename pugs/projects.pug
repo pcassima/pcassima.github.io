@@ -17,28 +17,34 @@ html
                 li
                     a(class="nav_active" href="projects.html") Projects
                 li
-                    a(href="#") Experiments
+                    a(href="https://pcassima.github.io/Experiments") Experiments
                 li
                     a(href="gallery.html") Gallery
                 li
                     a(href="about.html") About
                 li
                     a(href="contact.html") Contact
-        aside.left
-            include includes/left_aside.pug
-        aside.right
-            include includes/right_aside.pug
+        //aside.left
+        //    include includes/left_aside.pug
+        //aside.right
+        //    include includes/right_aside.pug
         main
             article
                 h1 Projects
+                p
+                    | Projects are fully worked out things to build or make.
+                    | These have been completely documented from start to finish and include all documentation
+                    | to remake the same project for yourself.
                 ul
                     li
                         a(href="#active_projects") Active Projects
                     li
-                        a(href="#planned_projects") Planned Projects
+                        a(href="#future_projects") Future Projects
+
                     li
                         a(href="#past_projects") Past Projects
-                section(id="active_projects")
+
+                section#active_projects
                     h2 Active projects
                     h3 My Thesis
                     p
@@ -47,9 +53,10 @@ html
                         | Currently I do not yet know, if I will be allowed to write publicly about it. As soon as
                         | I know more I will update this page and add the relevant information about it.
                     h3 LINAL
-                section(id="planned_projects")
-                    h2 Planned projects
-                    h3 DLC
+                section#future_projects
+                    h2 Future projects
+                    h3 Planned projects
+                    h4 DLC
                     p
                         | I am planning on building a fully operational 8-bit computer, out of nothing but logic
                         | IC's from the 74-series.
@@ -60,21 +67,26 @@ html
                     p
                         | More information about the project can be found here:
                         a(href="https://pcassima.github.io/DLC/" target="_blank")  DLC
-                    h3 Other ideas
-                    p These are some ideas that are waiting to be started.
+                    h3 Project ideas
+                    p
+                        | These are some ideas for projects that I have, but that haven't been started yet, or are
+                        | just a concept still.
+                    p
+                        | If you prefer one of these projects over the others, you can contact me to have the
+                        | project boosted.
                     ul.fa-ul
                         li
                             span.fa-li
                                 i(class="fas fa-caret-right")
-                            | A series about computer vision on the Raspberry Pi
+                            | RAAV - The <b>R</b>aspberry-Pi <b>A</b>rduino <b>A</b>utonomous <b>V</b>ehicle
                         li
                             span.fa-li
                                 i(class="fas fa-caret-right")
-                            | A linefollower with a raspberry pi (IR sensors)
+                            | A series about computer vision on the raspberry pi
                         li
                             span.fa-li
                                 i(class="fas fa-caret-right")
-                            | A linefollower with computer vision
+                            | A fast linefollower (using Arduino, Teensy or Pycom) with PID
                         li
                             span.fa-li
                                 i(class="fas fa-caret-right")
@@ -91,9 +103,17 @@ html
                             span.fa-li
                                 i(class="fas fa-caret-right")
                             | Handheld game console (RGB-matrix en Pycom/Teensy)
-
-                section(id="past_projects")
+                section#past_projects
                     h2 Past projects
-
+                    p
+                        | Currently there are no past projects yet.
+            article
+                h1 Tutorials
+                p
+                    | Small structured pieces, to help you learn or explain things.
+            article
+                h1 Experiments
+                p
+                    | Learn with me!
         footer
             include includes/footer.pug

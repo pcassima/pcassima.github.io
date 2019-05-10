@@ -17,17 +17,17 @@ html
                 li
                     a(href="projects.html") Projects
                 li
-                    a(href="#") Experiments
+                    a(href="https://pcassima.github.io/Experiments") Experiments
                 li
                     a(href="gallery.html") Gallery
                 li
                     a(href="about.html") About
                 li
                     a(class="nav_active" href="contact.html") Contact
-        aside.left
-            include includes/left_aside.pug
-        aside.right
-            include includes/right_aside.pug
+        //aside.left
+        //    include includes/left_aside.pug
+        //aside.right
+        //    include includes/right_aside.pug
         main
             article
                 section
@@ -36,6 +36,9 @@ html
                         | Sending me an email is the fastest way to get in touch. You will also get a reply the fastest, this way.
                         br
                         | To get in touch with me in this way, you can just fill out the form below.
+                    p
+                        | I am more than happy to hear for you!
+                        | You can contact me about anything!
                     p
                         | If you prefer you can contact me via any of the other channels found in the social bar in the footer of the page.
                 section.contact_form
@@ -50,5 +53,6 @@ html
                         textarea(name="_message" placeholder="Your message")
                         input(type="submit" value="send")
                         input(type="hidden" name="_next" value="https://pcassima.github.io/contact.html")
+
         footer
             include includes/footer.pug
