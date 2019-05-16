@@ -136,6 +136,9 @@ body {
 
     }
   }
+  figure::after{
+    clear: both;
+  }
 
 }
 
@@ -210,6 +213,7 @@ main {
   }
 
   section {
+    clear: both;
     margin-bottom: 24px;
   }
 
