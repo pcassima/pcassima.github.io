@@ -6,10 +6,10 @@ html
         header
             include includes/header.pug
         nav
-            .hamburger(onclick="myFunction()")
-                .hamburger-bar
-                .hamburger-bar
-                .hamburger-bar
+            #hamburger.hamburger(onclick="hamburgerNav()")
+                #h-bar1.hamburger-bar
+                #h-bar2.hamburger-bar
+                #h-bar3.hamburger-bar
 
             ul#nav-list.nav-list
                 li
@@ -31,27 +31,44 @@ html
         main
             article
                 h1 Projects
-                p
-                    | Projects are fully worked out things to build or make.
-                    | These have been completely documented from start to finish and include all documentation
-                    | to remake the same project for yourself.
-                ul
-                    li
-                        a(href="#active_projects") Active Projects
-                    li
-                        a(href="#future_projects") Future Projects
+                section
+                    p
+                        | Projects are fully worked out things to build or make.
+                        | These have been completely documented from start to finish and include all documentation
+                        | to remake the same project for yourself.
+                    ul.fa-ul
+                        li
+                            span.fa-li
+                                i(class="fas fa-chevron-right")
+                            a(href="#active_projects") Active Projects
+                            p
+                                | These are projects that I am currently working on. Feel free to check them out.
+                        li
+                            span.fa-li
+                                i(class="fas fa-chevron-right")
+                            a(href="#future_projects") Future Projects
+                            p
+                                | These are the projects that are still a concept or an idea. I hope to start on these soon.
 
-                    li
-                        a(href="#past_projects") Past Projects
+                        li
+                            span.fa-li
+                                i(class="fas fa-chevron-right")
+                            a(href="#past_projects") Past Projects
+                            p
+                                | These are projects have been completed and have all their documentation written. These
+                                | can be considered as an archive.
 
                 section#active_projects
                     h2 Active projects
                     h3 My Thesis
                     p
-                        | I am currently writing my thesis for my bachelor's degree in industrial automation.
+                        | This is the complete documentation for my Bachelor's thesis to obtain a Bachelor's degree in
+                        | <em>Industrial Automation</em>. We worked out a proof-of-concept to show that a
+                        | computer-vision system can be used to position objects accurately. So that they can be
+                        | transferred to a virtual-reality environment.
                     p
-                        | Currently I do not yet know, if I will be allowed to write publicly about it. As soon as
-                        | I know more I will update this page and add the relevant information about it.
+                        | The page for the project can be found at:
+                        a(href="https://pcassima.github.io/thesis_hogent/" target="_blank")  thesis
                     h3 LINAL
                 section#future_projects
                     h2 Future projects
@@ -111,9 +128,5 @@ html
                 h1 Tutorials
                 p
                     | Small structured pieces, to help you learn or explain things.
-            article
-                h1 Experiments
-                p
-                    | Learn with me!
         footer
             include includes/footer.pug

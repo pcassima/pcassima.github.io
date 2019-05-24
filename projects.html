@@ -23,10 +23,10 @@
   <body>
     <header></header>
     <nav>
-      <div class="hamburger" onclick="myFunction()">
-        <div class="hamburger-bar"></div>
-        <div class="hamburger-bar"></div>
-        <div class="hamburger-bar"></div>
+      <div class="hamburger" id="hamburger" onclick="hamburgerNav()">
+        <div class="hamburger-bar" id="h-bar1"></div>
+        <div class="hamburger-bar" id="h-bar2"></div>
+        <div class="hamburger-bar" id="h-bar3"></div>
       </div>
       <ul class="nav-list" id="nav-list">
         <li><a href="index.html">Home</a></li>
@@ -44,24 +44,37 @@
     <main>
       <article>
         <h1>Projects</h1>
-        <p>
-          Projects are fully worked out things to build or make.
-          These have been completely documented from start to finish and include all documentation
-          to remake the same project for yourself.
-        </p>
-        <ul>
-          <li><a href="#active_projects">Active Projects</a></li>
-          <li><a href="#future_projects">Future Projects</a></li>
-          <li><a href="#past_projects">Past Projects</a></li>
-        </ul>
+        <section>
+          <p>
+            Projects are fully worked out things to build or make.
+            These have been completely documented from start to finish and include all documentation
+            to remake the same project for yourself.
+          </p>
+          <ul class="fa-ul">
+            <li><span class="fa-li"><i class="fas fa-chevron-right"></i></span><a href="#active_projects">Active Projects</a>
+              <p>These are projects that I am currently working on. Feel free to check them out.</p>
+            </li>
+            <li><span class="fa-li"><i class="fas fa-chevron-right"></i></span><a href="#future_projects">Future Projects</a>
+              <p>These are the projects that are still a concept or an idea. I hope to start on these soon.</p>
+            </li>
+            <li><span class="fa-li"><i class="fas fa-chevron-right"></i></span><a href="#past_projects">Past Projects</a>
+              <p>
+                These are projects have been completed and have all their documentation written. These
+                can be considered as an archive.
+              </p>
+            </li>
+          </ul>
+        </section>
         <section id="active_projects">
           <h2>Active projects</h2>
           <h3>My Thesis</h3>
-          <p>I am currently writing my thesis for my bachelor's degree in industrial automation.</p>
           <p>
-            Currently I do not yet know, if I will be allowed to write publicly about it. As soon as
-            I know more I will update this page and add the relevant information about it.
+            This is the complete documentation for my Bachelor's thesis to obtain a Bachelor's degree in
+            <em>Industrial Automation</em>. We worked out a proof-of-concept to show that a
+            computer-vision system can be used to position objects accurately. So that they can be
+            transferred to a virtual-reality environment.
           </p>
+          <p>The page for the project can be found at:<a href="https://pcassima.github.io/thesis_hogent/" target="_blank"> thesis</a></p>
           <h3>LINAL</h3>
         </section>
         <section id="future_projects">
@@ -104,10 +117,6 @@
       <article>
         <h1>Tutorials</h1>
         <p>Small structured pieces, to help you learn or explain things.</p>
-      </article>
-      <article>
-        <h1>Experiments</h1>
-        <p>Learn with me!</p>
       </article>
     </main>
     <footer>
