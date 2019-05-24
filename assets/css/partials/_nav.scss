@@ -73,11 +73,28 @@ nav {
       cursor: pointer;
     }
 
+    .hamburger.active #h-bar1 {
+      transform: translate(0, 250%) rotate(45deg);
+    }
+
+    .hamburger.active #h-bar2 {
+      transform-origin: 100% 50%;
+      transform: scaleX(0);
+    }
+
+    .hamburger.active #h-bar3 {
+      transform: translate(0, -250%) rotate(-45deg);
+    }
+
     .hamburger-bar {
       width: 40px;
       height: 4px;
       background-color: white;
       margin: 6px 0;
+      transition: all ease-in-out 350ms;
     }
+  }
+  @media print{
+    display: none;
   }
 }
