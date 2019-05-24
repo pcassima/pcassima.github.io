@@ -60,11 +60,27 @@ nav a:hover {
     vertical-align: middle;
     cursor: pointer;
   }
+  nav .hamburger.active #h-bar1 {
+    transform: translate(0, 250%) rotate(45deg);
+  }
+  nav .hamburger.active #h-bar2 {
+    transform-origin: 100% 50%;
+    transform: scaleX(0);
+  }
+  nav .hamburger.active #h-bar3 {
+    transform: translate(0, -250%) rotate(-45deg);
+  }
   nav .hamburger-bar {
     width: 40px;
     height: 4px;
     background-color: white;
     margin: 6px 0;
+    transition: all ease-in-out 350ms;
+  }
+}
+@media print {
+  nav {
+    display: none;
   }
 }
 
@@ -253,15 +269,20 @@ body figure img {
   height: auto;
   max-width: 400px;
 }
+@media print {
+  body figure img {
+    max-width: 320px;
+  }
+}
 body figure figcaption {
   text-align: right;
   font-size: 12px;
 }
 
-header h1 {
-  color: #e11c84;
-  text-align: center;
-  border: none;
+@media print {
+  header {
+    display: none;
+  }
 }
 
 aside {
@@ -283,6 +304,11 @@ aside ol {
 aside ol ol {
   margin-left: -35px;
   list-style-type: lower-latin;
+}
+@media print {
+  aside {
+    display: none;
+  }
 }
 
 .left {
@@ -319,12 +345,18 @@ main article {
   margin-bottom: 24px;
 }
 main section {
+  clear: both;
   margin-bottom: 24px;
 }
 main .bottom_navbar {
   width: auto;
   margin: 2px 0;
   font-size: 18px;
+}
+@media print {
+  main .bottom_navbar {
+    display: none;
+  }
 }
 main .back {
   float: left;
@@ -511,6 +543,11 @@ footer .social_bar .fab {
 }
 footer .social_bar .fab:hover {
   opacity: 0.7;
+}
+@media print {
+  footer {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

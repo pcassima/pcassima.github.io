@@ -1,10 +1,4 @@
-$teal1: #20dce1;
-$teal2: #18a4af;
-$teal3: #16a5a9;
-$teal4: #1c5555;
-$pink1: #e11c84;
-$pink2: #a42064;
-$pink3: #700e41;
+@import 'partials/colours';
 
 $aside_width: 140px;
 $mobile_switch: 750px;
@@ -128,6 +122,9 @@ body {
       width: 100%;
       height: auto;
       max-width: 400px;
+      @media print{
+        max-width: 320px;
+      }
     }
 
     figcaption {
@@ -140,10 +137,8 @@ body {
 }
 
 header {
-  h1 {
-    color: $pink1;
-    text-align: center;
-    border: none;
+  @media print{
+    display: none;
   }
 }
 
@@ -174,6 +169,9 @@ aside {
       list-style-type: lower-latin;
     }
 
+  }
+  @media print{
+    display: none;
   }
 }
 
@@ -218,6 +216,9 @@ main {
     width: auto;
     margin: 2px 0;
     font-size: 18px;
+    @media print{
+      display: none;
+    }
   }
 
   .back {
@@ -429,5 +430,7 @@ footer {
       opacity: 0.7;
     }
   }
-
+  @media print{
+    display: none;
+  }
 }
