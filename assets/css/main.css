@@ -87,6 +87,9 @@ nav a:hover {
 .gist_container {
   margin: 12px 0;
 }
+.gist_container label {
+  text-align: right;
+}
 .gist_container .gist .gist-file {
   margin-bottom: 0;
   border: 1px solid #700e41;
