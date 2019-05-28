@@ -88,7 +88,11 @@ nav a:hover {
   margin: 12px 0;
 }
 .gist_container label {
+  display: block;
   text-align: right;
+  margin-top: 4px;
+  color: #18a4af;
+  font-weight: bold;
 }
 .gist_container .gist .gist-file {
   margin-bottom: 0;

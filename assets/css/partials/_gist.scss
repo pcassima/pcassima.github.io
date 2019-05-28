@@ -1,8 +1,12 @@
 .gist_container {
   margin: 12px 0;
 
-  label{
+  label {
+    display: block;
     text-align: right;
+    margin-top: 4px;
+    color: $teal2;
+    font-weight: bold;
   }
 
   .gist {
