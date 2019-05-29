@@ -221,7 +221,7 @@ nav a:hover {
 }
 .photo-card p {
   position: absolute;
-  top: 320px;
+  top: 340px;
   margin: -24px 8px 8px;
 }
 .photo-card img {
@@ -377,6 +377,7 @@ aside {
   width: 140px;
   overflow: hidden;
   margin-top: 24px;
+  box-shadow: 4px 4px 8px 0 rgba(75, 75, 75, 0.75);
 }
 aside p {
   margin: 8px 4px;
