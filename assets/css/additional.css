@@ -51,6 +51,7 @@
   transition: all ease-in-out 250ms;
 }
 .modal-box .close-button {
+  z-index: 11;
   position: absolute;
   right: 2%;
   top: 4%;
@@ -59,9 +60,6 @@
   opacity: 1;
   background-color: white;
   border-radius: 50%;
-}
-.modal-box .close-button:hover {
-  opacity: 0.5;
 }
 .modal-box .close-button:before, .modal-box .close-button:after {
   position: absolute;
