@@ -597,6 +597,9 @@ pre code {
   text-align: center;
   font-size: 14px;
 }
+.gallery_container figure figcaption a {
+  cursor: pointer;
+}
 
 header {
   position: relative;

@@ -385,6 +385,9 @@ pre {
     figcaption {
       text-align: center;
       font-size: 14px;
+      a{
+        cursor: pointer;
+      }
     }
   }
 }
