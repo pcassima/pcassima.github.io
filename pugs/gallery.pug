@@ -37,52 +37,108 @@ html(lang="en")
                         | Some royalty free images, used as filler, to test the layout and styling:
                     .gallery_container
                         figure
-                            img(src="https://unsplash.it/640/512?random" alt="image 1")
+                            img(src="https://unsplash.it/640/512?random"
+                                alt="image 1"
+                                onclick='open_modal("modal-box-1")')
                             figcaption
-                                a(href="#") Figure 1
+                                a(onclick='open_modal("modal-box-1")') Figure 1
                                 br
                                 | &copy; 2019
+                            .modal-box#modal-box-1
+                                .close-button(onclick='close_modal("modal-box-1")')
+                                .image-modal-container
+                                    img(src='https://unsplash.it/g/2000/1600')
+                                    figcaption A photo
                         figure
-                            img(src="https://unsplash.it/640/512?random" alt="image 2")
+                            img(src="https://unsplash.it/640/512?random"
+                                alt="image 2"
+                                onclick='open_modal("modal-box-2")')
                             figcaption
-                                a(href="#") Figure 2
+                                a(onclick='open_modal("modal-box-2")') Figure 2
                                 br
                                 | &copy; 2019
+                            .modal-box#modal-box-2
+                                .close-button(onclick='close_modal("modal-box-2")')
+                                .image-modal-container
+                                    img(src='https://unsplash.it/g/2000/1600')
+                                    figcaption A photo
                         figure
-                            img(src="https://unsplash.it/640/512?random" alt="image 3")
+                            img(src="https://unsplash.it/640/512?random"
+                                alt="image 3"
+                                onclick='open_modal("modal-box-3")')
                             figcaption
-                                a(href="#") Figure 3
+                                a(onclick='open_modal("modal-box-3")') Figure 3
                                 br
                                 | &copy; 2019
+                            .modal-box#modal-box-3
+                                .close-button(onclick='close_modal("modal-box-3")')
+                                .image-modal-container
+                                    img(src='https://unsplash.it/g/2000/1600')
+                                    figcaption A photo
                         figure
-                            img(src="https://unsplash.it/640/512?random" alt="image 4")
+                            img(src="https://unsplash.it/640/512?random"
+                                alt="image 4"
+                                onclick='open_modal("modal-box-4")')
                             figcaption
-                                a(href="#") Figure 4
+                                a(onclick='open_modal("modal-box-4")') Figure 4
                                 br
                                 | &copy; 2019
+                            .modal-box#modal-box-4
+                                .close-button(onclick='close_modal("modal-box-4")')
+                                .image-modal-container
+                                    img(src='https://unsplash.it/g/2000/1600')
+                                    figcaption A photo
                         figure
-                            img(src="https://unsplash.it/640/512?random" alt="image 5")
+                            img(src="https://unsplash.it/640/512?random"
+                                alt="image 5"
+                                onclick='open_modal("modal-box-5")')
                             figcaption
-                                a(href="#") Figure 5
+                                a(onclick='open_modal("modal-box-5")') Figure 5
                                 br
                                 | &copy; 2019
+                            .modal-box#modal-box-5
+                                .close-button(onclick='close_modal("modal-box-5")')
+                                .image-modal-container
+                                    img(src='https://unsplash.it/g/2000/1600')
+                                    figcaption A photo
                         figure
-                            img(src="https://unsplash.it/640/512?random" alt="image 6")
+                            img(src="https://unsplash.it/640/512?random"
+                                alt="image 6"
+                                onclick='open_modal("modal-box-6")')
                             figcaption
-                                a(href="#") Figure 6
+                                a(onclick='open_modal("modal-box-6")') Figure 6
                                 br
                                 | &copy; 2019
+                            .modal-box#modal-box-6
+                                .close-button(onclick='close_modal("modal-box-6")')
+                                .image-modal-container
+                                    img(src='https://unsplash.it/g/2000/1600')
+                                    figcaption A photo
                         figure
-                            img(src="https://unsplash.it/640/512?random" alt="image 7")
+                            img(src="https://unsplash.it/640/512?random"
+                                alt="image 7"
+                                onclick='open_modal("modal-box-7")')
                             figcaption
-                                a(href="#") Figure 7
+                                a(onclick='open_modal("modal-box-7")') Figure 7
                                 br
                                 | &copy; 2019
+                            .modal-box#modal-box-7
+                                .close-button(onclick='close_modal("modal-box-7")')
+                                .image-modal-container
+                                    img(src='https://unsplash.it/g/2000/1600')
+                                    figcaption A photo
                         figure
-                            img(src="https://unsplash.it/640/512?random" alt="image 8")
+                            img(src="https://unsplash.it/640/512?random"
+                                alt="image 8"
+                                onclick='open_modal("modal-box-8")')
                             figcaption
-                                a(href="#") Figure 8
+                                a(onclick='open_modal("modal-box-8")') Figure 8
                                 br
                                 | &copy; 2019
+                            .modal-box#modal-box-8
+                                .close-button(onclick='close_modal("modal-box-8")')
+                                .image-modal-container
+                                    img(src='https://unsplash.it/g/2000/1600')
+                                    figcaption A photo
                 section
                     h2 Other photos
