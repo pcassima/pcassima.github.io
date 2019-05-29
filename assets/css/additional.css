@@ -89,6 +89,7 @@
 .modal-box .image-modal-container img {
   max-width: 100%;
   max-height: 100%;
+  clip-path: none;
 }
 .modal-box .image-modal-container figcaption {
   color: white;
