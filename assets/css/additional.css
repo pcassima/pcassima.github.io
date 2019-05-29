@@ -71,6 +71,9 @@
 .folder-tree .fab {
   color: #16a5a9;
 }
+.folder-tree .fa-python {
+  color: #FFD43B;
+}
 .folder-tree ul {
   margin: 0;
   list-style: none;
