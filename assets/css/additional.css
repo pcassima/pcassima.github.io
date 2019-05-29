@@ -1,10 +1,12 @@
 .generic_photo {
-  margin: 8px 16px 8px 0;
+  max-width: 450px;
+  margin: 8px 16px 12px 0;
   background-color: #e11c84;
   position: relative;
+  box-shadow: 4px 4px 8px 0 rgba(75, 75, 75, 0.75);
 }
 .generic_photo img {
-  max-width: 450px;
+  width: 100%;
   margin-bottom: -4px;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
 }
@@ -31,6 +33,65 @@
 }
 .generic_photo.right_aligned figcaption {
   right: 4px;
+}
+
+.modal-box.open-modal {
+  transform: scaleY(1);
+}
+
+.modal-box {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(75, 75, 75, 0.85);
+  transform: scaleY(0);
+  transition: all ease-in-out 250ms;
+}
+.modal-box .close-button {
+  position: absolute;
+  right: 2%;
+  top: 4%;
+  width: 48px;
+  height: 48px;
+  opacity: 1;
+  background-color: white;
+  border-radius: 50%;
+}
+.modal-box .close-button:hover {
+  opacity: 0.5;
+}
+.modal-box .close-button:before, .modal-box .close-button:after {
+  position: absolute;
+  left: 23px;
+  top: 7px;
+  content: " ";
+  height: 33px;
+  width: 2px;
+  background-color: #1e1e1e;
+}
+.modal-box .close-button:before {
+  transform: rotate(45deg);
+}
+.modal-box .close-button:after {
+  transform: rotate(-45deg);
+}
+.modal-box .image-modal-container {
+  position: absolute;
+  top: 5%;
+  bottom: 10%;
+  right: 5%;
+  left: 5%;
+  text-align: center;
+}
+.modal-box .image-modal-container img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.modal-box .image-modal-container figcaption {
+  color: white;
+  font-weight: bold;
 }
 
 .bottom_bar {
