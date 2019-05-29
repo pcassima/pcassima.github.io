@@ -5,12 +5,23 @@ $mobile_switch: 820px;
 
 .generic_photo {
   margin: 8px 16px 8px 0;
+  background-color: $pink1;
+  position: relative;
 
   img {
     max-width: 450px;
+    margin-bottom: -4px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
     @media print {
       max-width: 320px;
     }
+  }
+  figcaption{
+    position: absolute;
+    bottom: 4px;
+    left: 4px;
+    margin: 0;
+    color: white;
   }
 
 }
@@ -19,6 +30,12 @@ $mobile_switch: 820px;
   float: right;
   margin-left: 12px;
   margin-right: 0;
+  img{
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+  }
+  figcaption{
+    right: 4px;
+  }
 }
 
 .bottom_bar {

@@ -1,19 +1,36 @@
 .generic_photo {
   margin: 8px 16px 8px 0;
+  background-color: #e11c84;
+  position: relative;
 }
 .generic_photo img {
   max-width: 450px;
+  margin-bottom: -4px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
 }
 @media print {
   .generic_photo img {
     max-width: 320px;
   }
 }
+.generic_photo figcaption {
+  position: absolute;
+  bottom: 4px;
+  left: 4px;
+  margin: 0;
+  color: white;
+}
 
 .generic_photo.right_aligned {
   float: right;
   margin-left: 12px;
   margin-right: 0;
+}
+.generic_photo.right_aligned img {
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+}
+.generic_photo.right_aligned figcaption {
+  right: 4px;
 }
 
 .bottom_bar {
