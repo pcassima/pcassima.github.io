@@ -118,6 +118,7 @@ body {
     padding: 0;
     margin: 0 16px 16px 0;
     float: left;
+    box-shadow: 4px 4px 8px 0 rgba(75, 75, 75, 0.75);
 
     img {
       width: 100%;
@@ -130,6 +131,8 @@ body {
 
     figcaption {
       text-align: right;
+      margin-right: 8px;
+      margin-bottom: 4px;
       font-size: 12px;
 
     }
